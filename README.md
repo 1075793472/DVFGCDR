@@ -7,5 +7,5 @@ python main.py
 The parameters of the methods we compare come from the settings of each author in the paper \
 DeepTTA: https://github.com/jianglikun/DeepTTC \
 DeepCDR: https://github.com/kimmo1019/DeepCDR \
-MOLI:https://github.com/hosseinshn/MOLI \
-https://github.com/Lowpassfilter/tCNNS-Project
+MOLI:    https://github.com/hosseinshn/MOLI \
+tCNNS:   https://github.com/Lowpassfilter/tCNNS-Project
