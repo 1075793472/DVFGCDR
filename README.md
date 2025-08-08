@@ -1,11 +1,41 @@
-##  DVFGCDR
+#  DVFGCDR
+DVFGCDR: a dual-view fusion graph neural network for cancer drug response prediction
 All data and code for DVFGCDR are included in the link below.\
 https://pan.baidu.com/s/1AnssTTJISnKcGAWz8fXwxQ?pwd=99q4
-## Train and test DVFGCDR
+# Install
+To use DSHCNet you must make sure that your python version is greater than 3.7. If you don’t know the version of python you can check it by:
+```python
+python
+>>> import platform
+>>> platform.python_version()
+'3.7.13'
+```
+# Train and test DVFGCDR
 python main.py
-## Parameters
+# Parameters
 The parameters of the methods we compare come from the settings of each author in the paper \
 DeepTTA: https://github.com/jianglikun/DeepTTC \
 DeepCDR: https://github.com/kimmo1019/DeepCDR \
 MOLI:    https://github.com/hosseinshn/MOLI \
 tCNNS:   https://github.com/Lowpassfilter/tCNNS-Project
+# Environment Requirement
+The required packages are as follows:
+- scikit-learn==0.21.3
+- cobra==0.22.1
+- joblib==1.1.0
+- numpy==1.21.6
+- optlang==1.5.2
+- pandas==1.3.5
+- torch                   1.12.1
+- torch-cluster           1.6.0+pt112cu113
+- torch-geometric         2.6.1
+- torch-scatter           2.1.0+pt112cu113
+- torch-sparse            0.6.15+pt112cu113
+- torchaudio              0.12.1
+- torchvision             0.13.1
+- tqdm                    4.66.5
+## Quick start
+
+```bash
+python main.py
+```
