@@ -11,7 +11,7 @@ python
 '3.7.13'
 ```
 # Train and test DVFGCDR
-1.Download the data from the Baidu Cloud link.
+1.Download the data from the Baidu Cloud link. \
 2.Unzip the downloaded data (.zip file) from Baidu Cloud, and copy all files from the unzipped folder to the same level directory as the main.py file in the repository.
 # Parameters
 The parameters of the methods we compare come from the settings of each author in the paper \
