@@ -1,5 +1,5 @@
 #  DVFGCDR
-DVFGCDR: a dual-view fusion graph neural network for cancer drug response prediction
+DVFGCDR: a dual-view fusion graph neural network for cancer drug response prediction. \
 Some big data are included in the link below.\
 [https://pan.baidu.com/s/1AnssTTJISnKcGAWz8fXwxQ?pwd=99q4](https://pan.baidu.com/s/1S_J6xaG6C2C9ZazrYE4F-Q?pwd=5a8p)
 # Install
