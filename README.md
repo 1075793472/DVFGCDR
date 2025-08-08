@@ -20,10 +20,10 @@ MOLI:    https://github.com/hosseinshn/MOLI \
 tCNNS:   https://github.com/Lowpassfilter/tCNNS-Project
 # Environment Requirement
 The required packages are as follows:
-- scikit-learn==0.21.3
-- cobra==0.22.1
+- scikit-learn            0.22.1
+- scipy                   1.4.1
 - joblib==1.1.0
-- numpy==1.21.6
+- numpy==1.22.3
 - optlang==1.5.2
 - pandas==1.3.5
 - torch                   1.12.1
