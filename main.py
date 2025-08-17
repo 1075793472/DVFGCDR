@@ -205,7 +205,7 @@ class Classifier(nn.Sequential):
                 v_f = F.relu(self.dropout(l(v_f)))
         return v_f
 
-# Import GIN-based drug feature extractor (from separate module)
+# Import DVFGCONV extractor (from separate module)
 from graphconv_drug import GINConvNet
 
 class DVFGCONV:
@@ -437,7 +437,14 @@ class DVFGCONV:
 
 
 if __name__ == '__main__':
-    # Main execution block
+    # If want to re-splitting data
+    # vocab_dir = '/home/s3540/DTI/DVFGCONV-main'
+    # obj = DataEncoding(vocab_dir=vocab_dir)
+    # traindata, testdata = obj.Getdata.ByCancer(random_seed=2)
+    # obj.encode(
+    #  traindata=traindata,
+    #  testdata=testdata)
+    
     modeldir = 'Model_80'  # Output directory
     modelfile = os.path.join(modeldir, 'model.pt')  # Model save path
     
