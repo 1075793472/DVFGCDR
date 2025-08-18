@@ -437,13 +437,15 @@ class DVFGCONV:
 
 
 if __name__ == '__main__':
-    # If want to re-splitting data
-    # vocab_dir = '/home/s3540/DTI/DVFGCONV-main'
-    # obj = DataEncoding(vocab_dir=vocab_dir)
-    # traindata, testdata = obj.Getdata.ByCancer(random_seed=2)
-    # obj.encode(
-    #  traindata=traindata,
-    #  testdata=testdata)
+    If want to re-splitting data
+    from Step2_DataEncoding import DataEncoding
+    
+    vocab_dir = '/home/s3540/DTI/DVFGCONV-main'
+    obj = DataEncoding(vocab_dir=vocab_dir)
+    traindata, testdata = obj.Getdata.ByCancer(random_seed=2)
+    obj.encode(
+     traindata=traindata,
+     testdata=testdata)
     
     modeldir = 'Model_80'  # Output directory
     modelfile = os.path.join(modeldir, 'model.pt')  # Model save path
