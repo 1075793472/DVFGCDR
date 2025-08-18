@@ -437,7 +437,7 @@ class DVFGCONV:
 
 
 if __name__ == '__main__':
-    If want to re-splitting data
+    #If want to re-splitting data
     from Step2_DataEncoding import DataEncoding
     
     vocab_dir = '/home/s3540/DTI/DVFGCONV-main'
