@@ -275,9 +275,9 @@ class DVFGCONV:
         - Validation metrics tracking"""
         # Hyperparameters
         lr = 0.0001        # Initial learning rate
-        decay = 0.0004      # Weight decay (L2 regularization)
+        decay = 0.0002      # Weight decay (L2 regularization)
         BATCH_SIZE = 128    # Batch size
-        train_epoch = 400   # Total training epochs
+        train_epoch = 300   # Total training epochs
         
         # Device setup
         self.model = self.model.to(self.device)
@@ -324,16 +324,7 @@ class DVFGCONV:
         for epo in range(train_epoch):
             loss_sum = 0  # Epoch loss accumulator
             
-            # Learning rate scheduling (step decay)
-            if epo == 100:
-                opt = torch.optim.Adam(self.model.parameters(), lr=0.00005, weight_decay=decay)
-            elif epo == 200:
-                opt = torch.optim.Adam(self.model.parameters(), lr=0.00003, weight_decay=decay)
-            elif epo == 300:
-                opt = torch.optim.Adam(self.model.parameters(), lr=0.00002, weight_decay=decay)
-            elif epo == 350:
-                opt = torch.optim.Adam(self.model.parameters(), lr=0.00001, weight_decay=decay)
-            
+
             # Batch iteration
             for batch_idx, (y, g1, g2, rna, func) in enumerate(training_generator):
                 # Forward pass
