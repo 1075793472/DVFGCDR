@@ -258,7 +258,7 @@ class GINConvNet(torch.nn.Module):
         
         # Global pooling: Sum features across all nodes in each graph
         max1 = global_add_pool(x_e, batch)
-        
+        max1 =F.relu(max1)
         # Batch normalization of pooled features
         max1 = self.bn6(max1)
         
