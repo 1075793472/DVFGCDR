@@ -1,7 +1,7 @@
 #  DVFGCDR
 DVFGCDR: a dual-view fusion graph neural network for cancer drug response prediction. \
 We have hosted some larger data files in the link below. \
-https://pan.baidu.com/s/1UXphVsIEuR7iCTPnzu8Xsg?pwd=bcnf
+https://pan.baidu.com/s/1QTD_JQFWpEyENfGEoIBVCg?pwd=ykf9
 # Install
 To use DSHCNet you must make sure that your python version is greater than 3.7. If you don’t know the version of python you can check it by:
 ```python
